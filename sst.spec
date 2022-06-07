@@ -1,6 +1,7 @@
 %global debug_package %{nil}
+%global shortname sst
 Summary: Solidigm Storage Tool (SST)
-Name: solidigm-sst-storage-tool-cli
+Name: solidigm
 Version: 1.1
 Release: 1%{?dist}
 License: custom
@@ -19,11 +20,11 @@ Solidigm Storage Tool (SST) supports firmware upgrades and 4Kn sector size chang
 %setup -c
 
 %build
-bsdtar -xf %{name}-*.x86_64.rpm
+bsdtar -xf %{shortname}-*.x86_64.rpm
 
 %install
 cp -ax %{_builddir}/%{name}-%{version}/usr %{buildroot}/
 
 %files
-%{_bindir}/%{name}
+%{_bindir}/%{shortname}
 /usr/lib/%{name}/
