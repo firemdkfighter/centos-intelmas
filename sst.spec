@@ -2,14 +2,12 @@
 %global shortname sst
 Summary: Solidigm Storage Tool (SST)
 Name: solidigm
-Version: 1.1
+Version: 1.3
 Release: 1%{?dist}
 License: custom
-
-Url: https://www.intel.com/content/www/us/en/download/715595/
-Source0: https://downloadmirror.intel.com/728230/SST_CLI_Linux_%{version}.zip
-
 BuildRequires: bsdtar
+Url: https://www.intel.com/content/www/us/en/download/715595/
+Source0: https://downloadmirror.intel.com/743764/SST_CLI_Linux_%{version}.zip
 
 %define _build_id_links none
 
