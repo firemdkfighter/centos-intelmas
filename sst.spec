@@ -26,3 +26,4 @@ cp -ax %{_builddir}/%{name}-%{version}/usr %{buildroot}/
 %files
 %{_bindir}/%{shortname}
 /usr/lib/%{name}/
+/usr/share/doc/%{shortname}/
